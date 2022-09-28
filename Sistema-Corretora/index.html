@@ -5,32 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Nome da Aplicação</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+        #container {
+          height: auto;
+          width: auto;
+          display: flex;
+          justify-content: space-around;
+        }
+        .titulo {
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          color:  firebrick;
+          font-size: 40px;
+          margin: 0%;
+        }
+        .link-1, .link-2, .link-3, .link-4 {
+          color: darkgoldenrod;
+          font-size: 20px;
+          margin: 0%
+          
+        }
+        #container2 {
+          margin-top: 10%;
+          display: flex;
+          flex-direction: column;  
+          justify-content: center;
+          align-items: center;
+        }
+        #footer1 {
+          display: flex;
+          justify-content: center;
+          align-self: flex-end;
+        }
+    </style>
   </head>
-  <body>
-    <div>
-      <h1>Bem-vind@ ao <em>Find House</em>!</h1>
-      <p>Um site feito para você que está procurando um imovél seja para comprar ou alugar</p>
-    </div>
+  <body style="height: 100vh;">
 
-    <div>
-      <a href="index.html">Página Inicial</a>
-      <a href="list-imoveis.html">Lista de Imóveis</a>
-      <a href="cadastro-imoveis.html">Anuncie seu Imóvel</a>
-      <a href="corretores.html">Cadastro de Corretores</a>
-    </div>
-
-    <div>
-      <!-- ADICIONAR INFORMAÇOES SOBRE SUA APLICAÇÃO -->
-    </div>
-
-    <div>
-      <p>Siga-nos nas redes sociais!</p>
-
-      <div>
-        <img src="https://image.flaticon.com/icons/png/512/25/25305.png" />
-        <img src="https://image.flaticon.com/icons/png/512/25/25425.png" />
-        <img src="https://image.flaticon.com/icons/png/512/8/8800.png" />
+      <header id="container">
+      
+          <p class="titulo">Find House</p>
+          <a class="link-1" href="index.html">Página Inicial</a>
+          <a class="link-2" href="list-imoveis.html" >Lista de Imóveis</a>
+          <a class="link-3" href="cadastro-imoveis.html">Anuncie seu Imóvel</a>
+          <a class="link-4" href="corretores.html">Cadastro de Corretores</a>
+      </header>
+     <div id="container2">
+        <h1>Bem-vind@ ao <em>Find House</em>!</h1>
+        <p>Um site feito para você que está procurando um imovél seja para comprar ou alugar</p>
       </div>
-    </div>
+
+      <footer id="footer1">
+        <p>Siga-nos nas redes sociais!</p>
+
+          <img src="https://image.flaticon.com/icons/png/512/25/25305.png" />
+          <img src="https://image.flaticon.com/icons/png/512/25/25425.png" />
+          <img src="https://image.flaticon.com/icons/png/512/8/8800.png" />
+      </footer>
   </body>
 </html>

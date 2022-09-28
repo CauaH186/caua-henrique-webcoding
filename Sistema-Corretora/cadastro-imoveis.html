@@ -5,48 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Cadastro de Imóveis</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+        #container {
+          height: auto;
+          width: auto;
+          display: flex;
+          justify-content: space-around;
+        }
+        .titulo {
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          color:  firebrick;
+          font-size: 40px;
+          margin: 0%;
+        }
+        .link-1, .link-2, .link-3, .link-4 {
+          color: darkgoldenrod;
+          font-size: 20px;
+          margin: 0%
+          
+        }
+        #container2 {
+          margin-top: 10%;
+          display: flex;
+          flex-direction: column;  
+          justify-content: center;
+          align-items: center;
+        }
+    </style>
   </head>
   <body>
-    <div>
-      <p>Find House</p>
+
+    <header id="container">
+     
+        <p class="titulo">Find House</p>
+        <a class="link-1" href="index.html">Página Inicial</a>
+        <a class="link-2" href="list-imoveis.html" >Lista de Imóveis</a>
+        <a class="link-3" href="cadastro-imoveis.html">Anuncie seu Imóvel</a>
+        <a class="link-4" href="corretores.html">Cadastro de Corretores</a>
+    </header>
+
+    <div id="container2">
+      <h2 style="font-size: 40px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Adicionar Imóvel</h2>
+      <br><br>
+      <form action="">
+        
+        <div style="display: flex; justify-content: start; align-items: flex-end;">
+         <label for="link-foto">Link para foto: </label>
+          <input type="url" id="link-foto" name="link-foto" style="margin-left:5vh;"/>
+       </div>
+
+        <div>
+          <label for="descricao">Descrição do Imóvel: </label>
+          <!-- Adicione o id apropriado para o input abaixo -->
+          <input type="text" id="descricao" name="descrição" style="margin-left: 0.4vh;"/>
+        </div>
+
+        <div>
+         <label for="preco">Preço (em R$): </label>
+          <!-- Adicione o id apropriado e o type para receber números abaixo -->
+          <input type="number" id="preco" name="preço" style="margin-left:4.6vh;"/>
+       </div>
+
+        <div>
+         <!-- Preencha as propriedades necessárias para os elementos abaixo -->
+         <label>Contato do corretor: </label>
+         <input type="tel" id="telefone" name="telefone" style="margin-left:1.4vh;"/>
+         <br><br><br>
+       </div>
+
+       <div class="form-add" style="display: flex; flex-direction: row; align-items: center; justify-content: center;"">
+          <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
+          <button type="submit" style="height: 40px; width: 100px; border: solid 1px black; background-color: firebrick; color: white;">Adicionar</button>
+        </div>
+     </form>
     </div>
-
-    <div>
-      <a href="index.html">Página Inicial</a>
-      <a href="list-imoveis.html">Lista de Imóveis</a>
-      <a href="cadastro-imoveis.html">Anuncie seu Imóvel</a>
-      <a href="corretores.html">Cadastro de Corretores</a>
-    </div>
-
-    <h2>Adicionar Imóvel</h2>
-    <form action="">
-      <div>
-        <label for="link-foto">Link para foto: </label>
-        <input type="url" id="link-foto" name="link-foto" />
-      </div>
-
-      <div>
-        <label for="descricao">Descrição do Imóvel: </label>
-        <!-- Adicione o id apropriado para o input abaixo -->
-        <input type="text" id="descricao" name="descrição" />
-      </div>
-
-      <div>
-        <label for="preco">Preço (em R$): </label>
-        <!-- Adicione o id apropriado e o type para receber números abaixo -->
-        <input type="number" id="preco" name="preço" />
-      </div>
-
-      <div>
-        <!-- Preencha as propriedades necessárias para os elementos abaixo -->
-        <label>Contato do corretor: </label>
-        <input type="tel" id="telefone" name="telefone" />
-      </div>
-
-      <div class="form-add">
-        <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
-        <button type="submit">Adicionar</button>
-      </div>
-    </form>
   </body>
 </html>

@@ -5,46 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Corretores</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+        #container {
+          height: auto;
+          width: auto;
+          display: flex;
+          justify-content: space-around;
+        }
+        .titulo {
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          color:  firebrick;
+          font-size: 40px;
+          margin: 0%;
+        }
+        .link-1, .link-2, .link-3, .link-4 {
+          color: darkgoldenrod;
+          font-size: 20px;
+          margin: 0%
+          
+        }
+        #container2 {
+          margin-top: 10%;
+          display: flex;
+          flex-direction: column;  
+          justify-content: center;
+          align-items: center;
+        }
+    </style>
   </head>
   <body>
-    <div>
-      <p>Find House</p>
+
+    <header id="container">
+     
+        <p class="titulo">Find House</p>
+        <a class="link-1" href="index.html">Página Inicial</a>
+        <a class="link-2" href="list-imoveis.html" >Lista de Imóveis</a>
+        <a class="link-3" href="cadastro-imoveis.html">Anuncie seu Imóvel</a>
+        <a class="link-4" href="corretores.html">Cadastro de Corretores</a>
+    </header>
+
+    <div id="container2">
+      <h2>Cadastro Corretores</h2>
+      <!-- Crie uma lista de funcionários usando as tags que você aprendeu hoje abaixo \/ -->
+      <h1>Corretores atuais</h1>
+      <table>
+        <tr>
+          <th>Nome</th>
+          <th>Contato</th>
+        </tr>
+
+        <tr>
+          <th>Cauã</th>
+          <th>81 985474586</th>
+        </tr>
+
+        <tr>
+          <th>Jonathan</th>
+          <th>81 985474586</th>
+        </tr>
+
+        <tr>
+          <th>Victor</th>
+          <th>81 985474586</th>
+        </tr>
+
+        <tr>
+          <th>Júnior</th>
+          <th>81 985474586</th>
+        </tr>
     </div>
-
-    <div>
-      <a href="index.html">Página Inicial</a>
-      <a href="list-imoveis.html">Lista de Imóveis</a>
-      <a href="cadastro-imoveis.html">Anuncie seu Imóvel</a>
-      <a href="corretores.html">Cadastro de Corretores</a>
-    </div>
-
-    <h2>Cadastro Corretores</h2>
-    <!-- Crie uma lista de funcionários usando as tags que você aprendeu hoje abaixo \/ -->
-    <h1>Corretores atuais</h1>
-    <table>
-      <tr>
-        <th>Nome</th>
-        <th>Contato</th>
-      </tr>
-
-      <tr>
-        <th>Cauã</th>
-        <th>81 985474586</th>
-      </tr>
-
-      <tr>
-        <th>Jonathan</th>
-        <th>81 985474586</th>
-      </tr>
-
-      <tr>
-        <th>Victor</th>
-        <th>81 985474586</th>
-      </tr>
-
-      <tr>
-        <th>Júnior</th>
-        <th>81 985474586</th>
-      </tr>
   </body>
 </html>
