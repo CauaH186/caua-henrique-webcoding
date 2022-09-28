@@ -51,37 +51,39 @@
     </header>
 
     <div id="container2">
-      <h2 style="font-size: 40px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Adicionar Imóvel</h2>
+      <h2 style="font-size: 40px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Visita</h2>
       <br><br>
-      <form action="">
+      <form>
+        <p style="font-size: 25px;">Que tipo de visita você deseja?</p>
+        <input type="radio" name="horario">
+        <label for="horario">Presencial</label> <br>  
+
+        <input type="radio" name="horario">
+        <label for="horario">Online</label><br><br><br>
+
+        <p style="font-size: 25px;">Que casa você deseja visitar?</p>
+
+        <input type="radio" name="sele"/>
+        <label for="link-foto">Casa no Campo</label><br>
+          
+        <input type="radio" name="sele"/>
+        <label for="descricao">Casa com Piscina</label><br>
+
+        <input type="radio" name="sele"/>
+        <label for="preco">Casa com Sotao</label><br>
         
-        <div style="display: flex; justify-content: start; align-items: flex-end;">
-         <label for="link-foto">Link para foto: </label>
-          <input type="url" id="link-foto" name="link-foto" style="margin-left:5vh;"/>
-       </div>
 
-        <div>
-          <label for="descricao">Descrição do Imóvel: </label>
-          <!-- Adicione o id apropriado para o input abaixo -->
-          <input type="text" id="descricao" name="descrição" style="margin-left: 0.4vh;"/>
-        </div>
+        <input type="radio" name="sele"/>
+        <label>Apartamento</label><br>
 
-        <div>
-         <label for="preco">Preço (em R$): </label>
-          <!-- Adicione o id apropriado e o type para receber números abaixo -->
-          <input type="number" id="preco" name="preço" style="margin-left:4.6vh;"/>
-       </div>
+        <input type="radio" name="sele"/>
+        <label>Apartamento em São-Paulo</label><br>
+        
+        <br><br><br>
 
-        <div>
-         <!-- Preencha as propriedades necessárias para os elementos abaixo -->
-         <label>Contato do corretor: </label>
-         <input type="tel" id="telefone" name="telefone" style="margin-left:1.4vh;"/>
-         <br><br><br>
-       </div>
 
        <div class="form-add" style="display: flex; flex-direction: row; align-items: center; justify-content: center;"">
-          <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
-          <button type="submit" style="height: 40px; width: 100px; border: solid 1px black; background-color: firebrick; color: white;">Adicionar</button>
+          <button type="submit" style="height: 40px; width: 100px; border: solid 1px black; background-color: firebrick; color: white;">Enviar</button>
         </div>
      </form>
     </div>
